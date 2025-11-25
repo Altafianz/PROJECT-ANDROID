@@ -1,0 +1,188 @@
+:root {
+  --warna-dasar: #ffc851;
+  --bg: #faefdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: #ffffff;
+  min-height: 2000px;
+}
+
+/* =========== navbar ============ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 5%;
+  background-color: rgba(77, 55, 30, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+}
+
+.navbar .logo-nav {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(255, 249, 238);
+  font-style: italic;
+}
+
+.navbar .logo-nav span {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(241, 210, 153);
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(192, 152, 107);
+}
+
+.navbar .navbar-tambahan a {
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.navbar .navbar-tambahan a:hover {
+  color: rgb(192, 152, 107);
+}
+
+#menu {
+  display: none;
+}
+
+/* =========== BG Utama ============ */
+
+.bg-awal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(img/BGAwal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-awal .content {
+  padding: 0.7rem 5%;
+  padding-bottom: 5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bg-awal .content span {
+  color: rgb(241, 210, 153);
+}
+
+.bg-awal .content h1 {
+  font-size: 4rem;
+}
+
+.bg-awal .content p {
+  font-size: 1.4rem;
+  font-weight: 230;
+}
+
+/* ======== Tentang Kami ======== */
+.tentang {
+  padding: 6rem 5% 0.8rem;
+}
+
+.tentang h2 {
+  color: #d3a23a;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.tentang .kolom {
+  display: flex;
+  gap: 2rem;
+}
+
+.tentang .kolom .a-img {
+  flex: 1 1 100rem;
+  height: 400px;
+  overflow: hidden;
+}
+
+.tentang .kolom .a-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tentang .kolom .content {
+  flex: 1 1 180rem;
+  padding: 0 1rem;
+}
+
+.tentang .kolom .content p {
+  text-align: justify;
+  color: #0f0b00;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* media query */
+
+/* mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 840px) {
+  html {
+    font-size: 75%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav a {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(201, 199, 199);
+    width: 200px;
+    height: 100vh;
+  }
+}
+
+/* laptop */
+@media (min-width: 841px) {
+  html {
+    font-size: 100%;
+  }
+}
