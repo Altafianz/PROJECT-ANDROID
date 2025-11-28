@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="FarFianz" content="Restoran Bikini Bottom" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="../src/alp.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a href="#home" class="logo-nav">Far<span>Fianz</span></a>
+      <div class="navbar-nav">
+        <a href="../utama/utama.html">Home</a>
+        <a href="../utama/utama.html#tentang">Tentang Kami</a>
+        <a href="#">Menu</a>
+        <a href="../utama/utama.html#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-tambahan">
+        <a href="#" id="cart-icon"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu-icon"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- shopping cart -->
+      <div class="shopping-cart">
+       <div class="cart-item">
+         <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Hamburger Spesial">
+         <div class="item-info">
+           <h3>Hamburger Spesial</h3>
+           <p>Rp 25.000</p>
+         </div>
+         <i data-feather="trash-2" class="remove-item"></i>
+       </div>
+      </div>
+      <!-- shopping cart selesai -->
+
+    </nav>
+
+    <!-- Pencarian -->
+    <form class="cari">
+        <button type="submit"><i data-feather="search"></i></button>
+        <input type="search" placeholder="Cari menu..." />
+    </form>
+
+    <!-- Menu -->
+    <section id="menu" class="menu" x-data="item">
+        <h2>Menu Kami</h2>
+            <div class="makanan">
+            <h3>Single Menu:</h3>
+                <div class="kolom">
+                    <!-- <template x-for="(item, index) in items" x-key="index"> -->
+                        <div class="menu-item">
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Burger Spesial" />
+                        <h3>Burger Spesial</h3>
+                        <p>Rp 25.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Fried Chicken" />
+                        <h3>Fried Chicken</h3>
+                        <p>Rp 12.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>  
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="French Fries" />
+                        <h3>French Fries</h3>
+                        <p>Rp 9.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>  
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="HotDog" />
+                        <h3>HotDog</h3>
+                        <p>Rp 20.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>  
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Tacos" />
+                        <h3>Tacos</h3>
+                        <p>Rp 22.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>  
+                    <div class="menu-a">   
+                        <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Pizza" />
+                        <h3>Pizza</h3>
+                        <p>Rp 69.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>          
+                </div>
+                <!-- </template> -->
+                </div>
+            </div>
+            <div class="minuman">
+            <h3>Minuman:</h3>
+                <div class="kolom">
+                    <!-- <template x-for="(item, index) in items" x-key="index"> -->
+                    <div class="menu-item">                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Caramel Macchiato" />
+                        <h3>Caramel Macchiato</h3>
+                        <p>Rp 22.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button> 
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Vanilla Latte" />
+                        <h3>Vanilla Latte</h3>
+                        <p>Rp 21.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button> 
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Hazelnut Latte" />
+                        <h3>Hazelnut Latte</h3>
+                        <p>Rp 23.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Matcha Latte" />
+                        <h3>Matcha Latte</h3>
+                        <p>Rp 24.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Chocolate Creamy" />
+                        <h3>Chocolate Creamy</h3>
+                        <p>Rp 20.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Strawberry Milkshake" />
+                        <h3>Strawberry Milkshake</h3>
+                        <p>Rp 18.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Mango Smoothie" />
+                        <h3>Mango Smoothie</h3>
+                        <p>Rp 19.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Lemon Tea Fresh" />
+                        <h3>Lemon Tea Fresh</h3>
+                        <p>Rp 12.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Lychee Tea" />
+                        <h3>Lychee Tea</h3>
+                        <p>Rp 14.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Blue Lagoon Soda" />
+                        <h3>Blue Lagoon Soda</h3>
+                        <p>Rp 17.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Mojito Mint" />
+                        <h3>Mojito Mint</h3>
+                        <p>Rp 16.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Red Velvet Latte" />
+                        <h3>Red Velvet Latte</h3>
+                        <p>Rp 22.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Taro Smoothie" />
+                        <h3>Taro Smoothie</h3>
+                        <p>Rp 20.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Coffee Float" />
+                        <h3>Coffee Float</h3>
+                        <p>Rp 19.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">   
+                        <img src="../img/menu/minuman.jpg" alt="Cookies & Cream Frappe" />
+                        <h3>Cookies & Cream Frappe</h3>
+                        <p>Rp 24.000</p> 
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>
+                    </div>
+                <!-- </template> -->
+                </div>
+            </div>
+            <div class="paket-kombo">
+            <h3>Paket Kombo:</h3>
+            <div class="kolom">
+                <!-- <template x-for="(item, index) in items" x-key="index"> -->
+                    <div class="menu-item">
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 1" />
+                        <h3>Paket Kombo 1<br>(2 Ayam + 1 Nasi + 1 Teh)</h3>
+                        <p>Rp 35.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 2" />
+                        <h3>Paket Kombo 2<br>(1 Ayam + 1 Kentang + 1 Cola)</h3>
+                        <p>Rp 28.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 3" />
+                        <h3>Paket Kombo 3<br>(Burger + Kentang Mini + Cola)</h3>
+                        <p>Rp 30.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 4" />
+                        <h3>Paket Kombo 4<br>(2 Burger Mini + 1 Teh)</h3>
+                        <p>Rp 32.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 5" />
+                        <h3>Paket Kombo 5<br>(1 Ayam + Nasi + Es Jeruk)</h3>
+                        <p>Rp 27.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    <div class="menu-a">
+                        <img src="../img/menu/combo.jpg" alt="Paket Kombo 6" />
+                        <h3>Paket Kombo 6<br>(Hotdog + Kentang + Cola)</h3>
+                        <p>Rp 33.000</p>
+                        <button class="add-cart"><i data-feather="plus"></i></button>
+                    </div>                
+                    </div>
+                <!-- </template> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="../menu/menu.html">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">fakhrialtafian</a>
+        . | &copy; 2025.
+        </p>
+      </div>
+
+    </footer>
+
+
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script src="../js/script.js"></script>
+  <script src="../src/alp.js"></script>
+</html>

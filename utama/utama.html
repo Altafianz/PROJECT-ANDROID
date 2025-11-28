@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="FarFianz" content="Restoran Bikini Bottom" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="../src/alp.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <a href="#home" class="logo-nav">Far<span>Fianz</span></a>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="../menu/menu.html">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-tambahan">
+        <a href="#" id="cart-icon"><i data-feather="shopping-cart"></i></a>
+        <a id="menu-icon"><i data-feather="menu"></i></a>
+      </div>
+
+       <!-- shopping cart -->
+      <div class="shopping-cart">
+       <div class="cart-item">
+         <img src="../img/menu/Barger PNG Images _ PNG Free Download - Pikbest.jpg" alt="Hamburger Spesial">
+         <div class="item-info">
+           <h3>Hamburger Spesial</h3>
+           <p>Rp 25.000</p>
+         </div>
+         <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <!-- shopping cart selesai -->
+
+    </nav>
+
+
+    <!-- bg awal -->
+    <section class="bg-awal" id="home">
+      <div class="content">
+        <h1>Fast Food, <span>Happiness.</span></h1>
+        <p>
+          Hidangan cepat saji dengan rasa terbaik yang siap membuat harimu lebih
+          menyenangkan.
+        </p>
+      </div>
+    </section>
+
+    <!-- tentang kami -->
+    <section class="tentang" id="tentang">
+      <h2>Tentang Kami</h2>
+      <div class="kolom">
+        <div class="a-img">
+          <img src="../img/ResFarFianz.png" alt="Gambar Tidak Didukung" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih restoran kami?</h3>
+          <p>
+            FarFianz adalah restoran cepat saji modern yang menawarkan hidangan
+            lezat dengan penyajian super cepat. Mengutamakan bahan berkualitas
+            dan rasa yang konsisten, FarFianz menghadirkan menu seperti burger
+            juicy, kentang renyah, dan minuman segar dalam suasana yang nyaman
+            dan ramah untuk semua kalangan.
+          </p>
+          <br />
+          <p>
+            Memilih FarFianz berarti mendapatkan kecepatan, kualitas, dan
+            kenyamanan dalam satu tempat. Dengan standar penyajian yang tinggi
+            dan harga yang tetap bersahabat, FarFianz memastikan setiap
+            kunjungan terasa memuaskan—cepat, enak, dan selalu bikin nagih.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ulasan -->
+    <section id="ulasan" class="ulasan">
+      <h2>Ulasan Pelanggan</h2>
+
+      <div class="kolom">
+        <div class="ulasan-item">
+          <div class="ulasan-box">
+            <h3>Andi</h3>
+            <p>
+              "Burgernya enak banget, dagingnya juicy dan rotinya lembut. Pasti
+              beli lagi!"
+            </p>
+            <span class="tanggal-ulasan">30 Februari 2025</span>
+          </div>
+
+          <div class="ulasan-box">
+            <h3>Siti</h3>
+            <p>"Tempatnya cozy dan makanannya fresh. Harga juga terjangkau."</p>
+            <span class="tanggal-ulasan">30 Februari 2025</span>
+          </div>
+
+          <div class="ulasan-box">
+            <h3>Budi</h3>
+            <p>
+              "Fast food terenak yang pernah saya coba. Pelayanan cepat dan
+              ramah."
+            </p>
+            <span class="tanggal-ulasan">30 Februari 2025</span>
+          </div>
+
+          <div class="ulasan-box">
+            <h3>Rina</h3>
+            <p>
+              "Ayam gorengnya crispy banget dan nggak terlalu berminyak.
+              Recommended!"
+            </p>
+            <span class="tanggal-ulasan">30 Februari 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+      <h2>Kontak Kami</h2>
+      <div class="kolom">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253763.06463651475!2d106.65333141161496!3d-6.3878224508103045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec0828bcde9f%3A0x301576d150524f0!2sDepok%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1764329928821!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No HP" />
+          </div>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+        "
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="../menu/menu.html">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by <a href="">fakhrialtafian</a>
+          . | &copy; 2025.
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    feather.replace();
+  </script>
+
+  <script src="../js/script.js"></script>
+  <script src="../src/alp.js"></script>
+</html>
