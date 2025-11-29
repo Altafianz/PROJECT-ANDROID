@@ -11,14 +11,11 @@ document.querySelector('#menu-icon').onclick = () => {
 }
 
 // klik di luar sidebar untuk menghilangkan navbarnya
-const menu = document.querySelector('#menu-icon');
+const menu = document.querySelector('#menu-icon ');
 const cart = document.querySelector('#cart-icon');
 const trash = document.querySelector(".add-cart")
 
 document.addEventListener('click', function(e) {
-    if (e.target.closest('.remove-item')) {
-        return;
-    }
     if(!menu.contains(e.target) && !navbarNav.contains(e.target)) {
         navbarNav.classList.remove('active');
     }
